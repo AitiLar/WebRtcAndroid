@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() {
+            content {
+                includeModule("org.webrtc", "google-webrtc")
+            }
+        }
+    }
+}
+rootProject.name = "WebRtcAndroid"
+include ':app'
